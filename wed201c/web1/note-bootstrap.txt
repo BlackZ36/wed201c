@@ -1,0 +1,76 @@
+-- tải xuống file css/ hoặc sử dụng link:
+=> <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+=> <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+
+--grid system:
+ - container: phần bao quanh
+	- class có thể bao gồm xs(nhỏ), sm, md, lg, xl, fluid(không căn lề)
+ - row: hàng
+	- class="row row-col-2" cột chứa chứa 2 col
+	- thuộc tính gx, gy, g: khoảng cách nữa các col trong row, khoảng cách từ 1-5
+ - column: và cột nằm trong cùng
+	- hệ thống cung cấp 12 cột
+	- div class="col-lg-3 col-sm-2 col-xs-1" -> nếu màn hình lg thì là 3, sm thì là 2, còn xs thì là 1
+
+--p class
+ -text: class="text-primary/secondary/success/danger/warning/infor/text-light bg-black/dark/text-white bg-secondary/ muted"
+
+--table
+ - class mặc định class="table"
+ - class="table table-striped table-hover table-primary"
+
+--form
+ -label: class="form-label"
+ -input: class="form-control"
+ -select: class="form-select"
+ -checkbox: class="form-check-input"
+ -đổi checkbox thành switch: class="form-check form-switch", nếu cùng dùng thì thêm form-check-inline
+
+--button
+ -class mặc định: class="btn"
+ -thêm màu: class="btn btn-primary"
+ -thêm outline: class="btn btn-outline-primary"
+ -class tương tác với thẻ a <a class="btn" href="" ><a/>
+ -biếm thành 1 link class="btn btn-link"
+
+--alert
+ class: class="alert alert-success alert-dismissible(có thể đóng được alert có thuộc tính này)" role="alert"
+ 	thêm btn class="btn-close" arial-label="close"
+	-thêm js: data-bs-dismiss="alert"
+	=> <div class="alert alert-warning alert-dismissible fade show" role="alert">
+    	This is a warning alert with a close button.
+    	<!-- Nút đóng (close button) -->
+    	<button type="button" class="close" data-dismiss="alert" aria-label="Close">
+      	<span aria-hidden="true">&times;</span>
+    	</button>
+  	</div>
+	
+--card
+ -class: class="card-body"
+ <div class="card" style="width: 00px;">
+    có thể thêm card-header, card-footer
+    <img src="https://via.placeholder.com/150" class="card-img-top" alt="Sample Image">
+    <div class="card-body"> (thêm card-img-overlay nếu muốn đè lelen img)
+      <h5 class="card-title">Card Title</h5>
+      <h5 class="card-subtitle">Card Sub Title</h5>
+      <p class="card-text">This is a sample card with some placeholder text. You can add more details here.</p>
+      <a href="#" class="btn btn-primary">Read More</a>
+    </div>
+  </div>
+ - thêm div class="card-group" để bao gồm toàn bộ các card
+
+
+--modal
+ -button mở modal: bao gồm data-bs-toggle="modal" data-bs-target="#modal"
+ -class modal: class="modal" id="modal"
+ -trong modal bao gồm div class="modal-dialog" -> bên trong bao gồm class="modal-header", class="modal-body", class="footer"
+
+
+--navbar(quan trọng)
+ -class: class="navbar bg-black"
+ -bao gồm:
+	-logo: <a href="" class="navbar-brand text-white">logo</a>
+	-thêm các thẻ ul:
+	<ul class="navbar-nav>
+		
+	<ul>

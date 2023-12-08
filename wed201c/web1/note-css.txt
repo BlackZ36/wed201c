@@ -1,0 +1,88 @@
+có 3 cách viết css
+ 1. viết inline với style=""
+ 2. viết internal với thẻ <style></style>
+ 3, viết external với file css riêng style.css
+
+-- viết internal
+<style>
+
+</style>
+
+-- viết external
+ -link vào html: <link rel="stylesheet" href="">
+ -selector class và id:
+	class(có thể dùng cho nhiều thẻ): class="c1" => .c1{...}
+	id(duy nhất không trùng lặp trong 1 thẻ html): id="id1" => #id1{...}
+
+--font
+ -font-family: sans-serif, Lucida Sans, Arial, ...;
+ -font-family: 'Roboto', sans-serif;
+ -font-size: 16px; (mặc định là 16px);
+ -font-style: italic; (in nghiêng);
+ -font-weight: bold/100/200/...;
+ -font-decoration: doted/underline/...;
+
+-- định dạng lề cho 1 thẻ
+ - mặc định là none
+ - border-style: solid/dashed/rigde/double/inset/outset/doted/... ;
+ - border-width: 20px; điều chỉnh độ rộng lề (2px)
+ - border-color: red; màu cho border
+ - border-radius: 5px; bo co border
+ - border-top-color/width/...: ;
+ - padding: 10px; khoảng cách từ content đến border
+
+-- thẻ body
+body{
+ background-color: red;
+ background: linear-gradient(màu A, màu B);
+ background-repeat: no-repeat; (không lặp lại khi body k bao phủ toàn bộ)
+ background-attachment: fixed; (kéo cho toàn bộ màn hình)
+}
+
+body{
+ background-image: url("duong-dan.jpg");
+ background-repeat: no-repeat; (không lặp lại khi body k bao phủ toàn bộ)
+ background-attachment: fixed; (kéo cho toàn bộ màn hình)
+ background-position: center; (luôn đứng ở giữa)
+ background-size: cover;
+}
+
+--margin và padding
+ -padding: 1em; all four sides
+ -padding: 5% 10%; top and bottom | left and right
+ -padding: 1em 2em 2em; top | left and right | bottom
+ -padding: 5px 1em 0 2em; top | right | bottom | left
+
+-- thuộc tính postion:
+ - có 5 giá trị: relative, static, sticky, fixed, absolute;
+   -static: mặc định, tất cả các element đều có postion là static
+   -relavte: đi kèm với các thuộc tính top, bottom, right, left: khoảng cách tính từ element đứng trước nó
+   -absolute: căn thẻ thẻ cha của thuộc tính này với các thuộc tính top, bottom, right, left. thẻ cha phải có 			thuộc tính relati
+   -fixed: dứa vào body và fix so với màn hình
+   -sticky: là sự kết hợp giữa relative và fixed
+
+--shadow
+ -text: text-shadow: 0px 0px 0px grey; đổ trái | đổ dưới | độ mờ => có thể có nhiều bóng đè lên nhau
+ -box-shadow: .. tương tự với text-shadow; đổ bóng cho toàn bộ element;
+
+--transform
+ -transform: translateX/Y(40px); theo trục X,Y;
+ -transform: translate(40px, 40px); theo cả 2 trục X và Y;
+ -transform: rotateX(180deg); xoay theo trục x 180 độ, tương tự với y
+ -transform: scaleX(1/2/3); scale theo trục, tương tụ với y
+ -transform: skewX(40deg); nghiên theo trục x, tương tự với y hoặc với cả 2 thuộc tính
+ -transform: matrix(scaleX, skewY, skewX, scaleY,translateX, translateY);
+
+--pseudo class:
+ -hover: khi hover vào button
+ -active: khi hold button
+ -nth-child(5) thuộc tính  thứ 5 (odd, even, 3n n chạy từ 0)
+
+--QUAN TRỌNG: Responsive
+ 320px - breakpoint smartphone
+ 768px - breakpoint tablet
+ 1024px - breakpoint laptop,pc, tv,..
+
+text: @media all and (max-width: 768px){...}
+ 	- bên trong các thẻ h1, p ,div,....
+	- hoạt động khi current width = max-width

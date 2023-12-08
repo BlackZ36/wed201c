@@ -1,0 +1,82 @@
+#logo {
+  display: flex;
+  justify-content: center;
+}
+
+#menu {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+h1 {
+  padding: 30px 0 20px 0;
+  text-align: center;
+  color: #0ec0c3;
+}
+
+#rowmot {
+  display: flex;
+  justify-content: center;
+}
+
+#anhtotrai img {
+  width: 100%;
+  height: 100%;
+}
+
+#haianhgiua img {
+  width: 100%;
+  height: 100%;
+}
+
+#giuacuoi {
+  margin-top: 1.5%;
+}
+
+#cuoicuoi {
+  margin-top: 1.5%;
+}
+
+#chutronganh {
+  display: flex;
+}
+#haianhcuoi img {
+  width: 100%;
+  height: 100%;
+}
+
+.chutronganh {
+  position: absolute;
+  top: 0;
+  color: white;
+  margin-left: 3%;
+}
+
+.chutronganhsau {
+  position: absolute;
+  top: 55%;
+  color: white;
+  margin-left: 3%;
+}
+
+#duoicung img {
+  width: 100%;
+}
+
+#duoicung {
+  margin-bottom: 20px;
+}
+
+#duoicung h3 {
+  color: orange;
+}
+
+.footer {
+  background: #0ec0c4;
+  padding-top: 20px;
+  padding-bottom: 30px;
+  text-align: center;
+  color: white;
+}

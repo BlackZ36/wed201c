@@ -1,0 +1,51 @@
+/* header */
+#header{
+    display: flex;
+    justify-content: space-between; /* can theo chieu ngang */
+    align-items: end; /* can theo chieu doc */
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+#logo img{
+    width: 40%;
+    margin: 10px;
+}
+
+#search-box{
+    width: 30%;
+}
+
+h3{
+    color: orange;
+}
+
+/* menu */
+#nav-bar{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h1{
+    text-align: center;
+    color: #0EC0C3;
+}
+
+#des {
+    margin-left: 1%;
+    margin-right: 1%;
+}
+
+#xemaymotcai{
+    justify-content: center;
+}
+
+#xemaymotcai img{
+    width: 100%;
+}
+
+#xemayhaicai img{
+    width: 60%;
+}

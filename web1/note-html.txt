@@ -1,0 +1,159 @@
+-- thẻ định dạng văn bản trong html
+in đậm(bold): <strong>Đoạn văn bản in đậm</strong>
+in nghiêng(italic): <em>Đoạn văn bản in nghiêng</em>
+in lớn(big): 	<h1>Đoạn văn bản in lớn nhất</h1>
+ 		<h2>Đoạn văn bản in lớn hơn</h2>
+		<h6>Đoạn văn bản in lớn nhất</h6>
+in nhỏ: <small>Đoạn văn bản in nhỏ</small>
+dưới đấy chữ: X<sub>2</sub> + Y<sub>2</sub> = Z<sub>2</sub>
+insert gạch chân: <ins>Đoạn văn bản được chèn mới</ins>
+delete ghạch ngang: <del>Đoạn văn bản bị xóa</del>
+mark đánh dấu: <mark>Đoạn văn bản được đánh dấu</mark>
+comment: <!-- đây là comment -->
+
+--link/hyperlink
+thẻ: <a href="https://www.example.com">Trang chủ</a> (mặc định target = _self) 
+thẻ với target: <a href="https://www.example.com" target="_blank">Trang chủ</a>
+email: <a href="mailto:ten@example.com">Gửi email</a>
+
+--image
+cơ bản: <img src="duong-dan-hinh-anh" alt="Mo ta hinh anh">
+bao gồm thuộc tính w,h: <img src="hinh-anh.jpg" alt="Một bức tranh đẹp" width="300" height="200">
+lồng trong thẻ a: <a href="dia-chi-url">
+    			<img src="duong-dan-hinh-anh" alt="Mo ta hinh anh">
+		</a>
+
+
+--audio
+cơ bản với các thuộc tính: <audio controls>
+   				 <source src="duong-dan-am-thanh.mp3" type="audio/mp3">
+				<source src="duong-dan-am-thanh-1.mp3" type="audio/wave">
+				<source src="duong-dan-am-thanh-2.mp3" type="audio/mepg">
+				các thẻ audio sẽ lần lượt khi các thẻ source trên không hoạt động
+    				Your browser does not support the audio element. 								(dòng nãy sẽ được hiển rn thị khi trình duyệt không hỗ trợ thẻ audio)
+			</audio>
+các attribute cho audio:	loop: tự lặp lại
+				autoplay: tự động play
+				muted: tự động tắt tiếng 
+
+--video
+với các thuộc tính cơ bản: <video width="640" height="360" controls>
+    				<source src="video.mp4" type="video/mp4">
+    				Your browser does not support the video tag.
+			</video>
+các attribute cơ bản giống với audido: ...
+
+
+--list (danh sách)
+unorder list: 	<ul> 
+			<li> 1 </li>
+			<li> 2 </li>
+			<li> 3 </li>
+		</ul>
+order list: 	<ol type ="1/a/A/..." > 
+			<li> 1 </li>
+			<li> 2 </li>
+			<li> 3 </li>
+		</ol>
+
+description list: <dl> 
+			<dt></dt> title
+			<dd></dd> description
+		</dl>
+
+nested list: lồng thẻ ul vào thẻ li
+		<li> 
+			<ul>
+				<li> 1 </li>
+				<li> 2 </li>
+			</ul>
+		</li>
+
+--table: bảng
+<table>
+    <tr>
+        <th>Tiêu đề cột 1</th>
+        <th>Tiêu đề cột 2</th>
+    </tr>
+    <tr>
+        <td>Dữ liệu hàng 1, cột 1</td>
+        <td>Dữ liệu hàng 1, cột 2</td>
+    </tr>
+    <tr>
+        <td>Dữ liệu hàng 2, cột 1</td>
+        <td>Dữ liệu hàng 2, cột 2</td>
+    </tr>
+</table>
+các attribute cơ bản: 
+a border="1" 
+b width="500" 
+Xác định khoảng cách giữa nội dung của ô và đường biên của ô: cellpadding="10"
+Xác định khoảng cách giữa các ô: cellspacing="5"
+Căn chỉnh bảng theo chiều ngang (left, center, right): align="center"
+màu bgcolor="#F0F0F0"
+mô tả ngắn: summary="Mô tả ngắn về bảng"
+tiêu để bảng: <table>
+    		<caption>Tiêu đề bảng</caption>
+    		<!-- Nội dung bảng -->
+	</table>
+
+-- các attribute trong thẻ head
+ 1. <title> </title> tên trang
+ 2. <meta charset="utf-8"> định dạng
+ 3. <meta name="Home description" content="Home"> mô tả cho trang
+ 4. <meta name="keywords" content="home html css js tutorial">
+ 5. <meta name="author" content="ten tac gia">
+ 6. <meta name="viewport" content="width=device-width, initial-scale=1.0"> chiều rộng = của thiết bị, zoom = 1.0
+ 7. <meta http-equiv="refresh" content="2"> tự đông reset sau 2 giây
+
+--thẻ iframe
+<iframe src="https://www.example.com" width="800" height="600" title="Trang Ví dụ"></iframe>
+
+--button
+
+--input type
+chữ: type="text"
+mật khẩu: type="password"
+số: type="number"
+submit: type="submit"
+reset thông tin: type="reset"
+radio button: cùng name type="radio"
+
+--select
+<form action="/submit-form" method="post">
+    <label for="colors">Chọn một màu sắc:</label>
+    <select name="colors" id="colors">
+        <option value="red">Đỏ</option>
+        <option value="blue">Xanh</option>
+        <option value="green">Lục</option>
+        <option value="yellow">Vàng</option>
+    </select>
+    <input type="submit" value="Gửi">
+</form>
+
+--một số thẻ khác
+<header>
+    <h1>Trang chủ</h1>
+    <nav>
+        <ul>
+            <li><a href="#">Danh mục 1</a></li>
+            <li><a href="#">Danh mục 2</a></li>
+        </ul>
+    </nav>
+</header>
+
+<footer>
+    <p>&copy; 2023 Trang web của bạn. Tất cả quyền được bảo lưu.</p>
+</footer>
+
+<pre>
+    function helloWorld() {
+        console.log("Hello, world!");
+    }
+</pre>
+
+<pre>
+    function helloWorld() {
+        console.log("Hello, world!");
+    }
+</pre>
